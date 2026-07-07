@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Central | El alma del café en la ciudad</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">☕ CAFÉ CENTRAL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1 class="display-1 fw-bold text-uppercase">Café Central</h1>
+            <p class="lead mb-4">La pausa que tu día merece. Aroma, tradición y diseño.</p>
+            <a href="#menu" class="btn btn-outline-light btn-lg px-4">Ver nuestra selección</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Menú de productos -->
+        <section id="menu" class="py-5">
+            <div class="container py-4">
+                <header class="text-center mb-5">
+                    <h2 class="display-5">Nuestro Menú</h2>
+                    <div class="divider mx-auto my-3"></div>
+                </header>
+                
+                <div class="row g-4">
+                    <!-- Articulo 1: Espresso -->
+                    <article class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800" class="card-img-top" alt="Espresso Intenso">
+                            <div class="card-body text-center">
+                                <h3 class="h4">Espresso Intenso</h3>
+                                <p class="card-text">Puro, fuerte y equilibrado. Ideal para despertar tus sentidos.</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Articulo 2: Capuccino (Imagen local) -->
+                    <article class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="tarta.jpg" class="card-img-top" alt="Capuccino Tradicional">
+                            <div class="card-body text-center">
+                                <h3 class="h4">Capuccino Tradicional</h3>
+                                <p class="card-text">La combinación perfecta entre espresso y cremosa leche vaporizada.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Articulo 3: Tarta -->
+                    <article class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1511018556340-d16986a1c194?w=800" class="card-img-top" alt="Tarta de Chocolate">
+                            <div class="card-body text-center">
+                                <h3 class="h4">Tartas Artesanales</h3>
+                                <p class="card-text">Nuestra receta secreta de chocolate para el antojo de la tarde.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario Contacto -->
+        <section id="contacto" class="py-5 bg-light">
+            <div class="container" style="max-width: 700px;">
+                <div class="style-card text-center">
+                    <h2 class="mb-4">Hablemos</h2>
+                    <form id="formulario-contacto" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Tu correo" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100 py-3">Enviar Solicitud</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 Café Central - Hecho con pasión</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tu archivo JS -->
+    <script src="java.js"></script>
+</body>
+</html>

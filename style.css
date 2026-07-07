@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary: #4a3728;
+    --secondary: #c5a075;
+    --dark: #1a1a1a;
+    --light: #fdfbf7;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+    color: #444;
+}
+
+h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--primary); }
+
+/* Navbar */
+.navbar {
+    background: rgba(74, 55, 40, 0.95) !important;
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1442512595333-e898393e8ea6?q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Menú Cards */
+.card {
+    border: none;
+    border-radius: 0;
+    transition: 0.4s;
+    background: transparent;
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* Formulario */
+.style-card {
+    background: #fff;
+    padding: 3rem;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.btn-dark {
+    background: var(--primary);
+    transition: 0.3s;
+}
+
+.btn-dark:hover {
+    background: var(--secondary);
+}
